@@ -1,0 +1,7 @@
+### Your ownCloud hast A lot of jobs in the oc_jobs table:
+
+As workaround for now you can erase all inactive jobs:
+
+DELETE FROM `oc_jobs` WHERE `oc_jobs`.`last_run` = 0 
+
+Please upgrade it to 8.2.8 or 9.0.5 or 9.1.1 where the problem is solved.
